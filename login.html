@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proton SaaS Service Provider| Login</title>
+    <!-- Fonts Start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- Fonts End -->
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  </head>
+  <body class="font-inter">
+    <!-- <div class="container">
+      <a href="index.html" class="font-bold text-lg block py-6 cursor-pointer "><i class="fa-solid fa-atom"></i> PROTON</a>
+    </div> -->
+    <nav class="container flex items-center py-6">
+        <p class="text-lg font-bold cursor-pointer text-proton-blue" onclick="window.location.href='index.html'"><i class="fa-solid fa-atom"></i> PROTON</p>
+      </nav>
+    <div class="container py-5">
+      <h1 class="text-center text-2xl text-proton-blue font-bold">Sign In</h1>
+      <div class="flex align-center justify-center mt-10">
+        <!-- Sign In with Start-->
+        <button type="button" class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-md text-sm px-4 py-3 text-center inline-flex items-center mr-2 mb-2">
+          <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 19">
+            <path
+              fill-rule="evenodd"
+              d="M8.842 18.083a8.8 8.8 0 0 1-8.65-8.948 8.841 8.841 0 0 1 8.8-8.652h.153a8.464 8.464 0 0 1 5.7 2.257l-2.193 2.038A5.27 5.27 0 0 0 9.09 3.4a5.882 5.882 0 0 0-.2 11.76h.124a5.091 5.091 0 0 0 5.248-4.057L14.3 11H9V8h8.34c.066.543.095 1.09.088 1.636-.086 5.053-3.463 8.449-8.4 8.449l-.186-.002Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          Sign in with Google
+        </button>
+        <button
+          type="button"
+          class="text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-sm px-4 py-3 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mb-2"
+        >
+          <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+            <path
+              fill-rule="evenodd"
+              d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          Sign in with Twitter
+        </button>
+        <!-- Sign In with End-->
+      </div>
+      <div class="inline-flex items-center justify-center w-full">
+        <hr class="w-96 h-px bg-gray-300 border-0" />
+        <span class="absolute px-3 text-gray-400 -translate-x-1/2 bg-white left-1/2">or</span>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center justify-center bg-white">
+      <div class="flex flex-col bg-white px-4 sm:px-6 md:px-8 lg:px-10 w-full max-w-md">
+        <!-- Form sign in -->
+        <form action="#">
+          <div class="flex flex-col mb-6">
+            <div class="relative">
+              <input
+                type="text"
+                id="floating_outlined"
+                class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-500 bg-transparent rounded-lg border border-gray-300 appearance-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+              />
+              <label
+                for="floating_outlined"
+                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
+                >Email</label
+              >
+            </div>
+          </div>
+          <div class="flex flex-col mb-6">
+            <div class="relative">
+              <input
+                type="text"
+                id="floating_outlined"
+                class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-500 bg-transparent rounded-lg border border-gray-300 appearance-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+              />
+              <label
+                for="floating_outlined"
+                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
+                >Password</label
+              >
+            </div>
+          </div>
+          <div class="flex items-center mb-10 -mt-4">
+            <div class="flex ml-auto">
+              <a href="#" class="inline-flex text-xs sm:text-sm text-proton-blue font-medium hover:text-proton-dusty">Forgot Your Password?</a>
+            </div>
+          </div>
+
+          <button class="btn btn-pink w-full">Sign In</button>
+        </form>
+        <div class="flex justify-center items-center mt-6">
+          <a href="#" target="_blank" class="items-center text-center">
+            Haven't registered yet? Choose a service and <br />
+            <span class="text-proton-dusty font-medium">sign up </span>for free now
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
