@@ -680,10 +680,6 @@ video {
   margin-left: 0.25rem;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
-}
-
 .ml-auto {
   margin-left: auto;
 }
@@ -710,6 +706,10 @@ video {
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-4 {
@@ -1399,10 +1399,16 @@ video {
 }
 
 .btn-dusty {
+  border-width: 1px;
   --tw-bg-opacity: 1;
   background-color: rgb(96 31 161 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow-color: rgb(168 85 247 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .btn-purple {
@@ -1480,14 +1486,7 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-#nav-menu.scrolled a {
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(23 37 84 / var(--tw-text-opacity));
-}
-
-#logo.scrolled a {
-  font-weight: 600;
+#nav-menu.scrolled a, #logo.scrolled a {
   --tw-text-opacity: 1;
   color: rgb(23 37 84 / var(--tw-text-opacity));
 }
@@ -1495,18 +1494,6 @@ video {
 #hamburger.scrolled  .hamburger-line {
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
-}
-
-#btn-login.scrolled {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 31 161 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  --tw-shadow-color: rgb(168 85 247 / 0.5);
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 @keyframes pulse {
@@ -1738,12 +1725,12 @@ video {
     margin-bottom: 0px;
   }
 
-  .lg\:ml-0 {
-    margin-left: 0px;
-  }
-
   .lg\:ml-20 {
     margin-left: 5rem;
+  }
+
+  .lg\:ml-4 {
+    margin-left: 1rem;
   }
 
   .lg\:mt-0 {
@@ -1856,5 +1843,6 @@ video {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
+
 
 

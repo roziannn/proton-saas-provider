@@ -74,7 +74,6 @@ accordionHeader.forEach((accordionHeader) => {
 var navbar = document.getElementById("nav-menu");
 var logos = document.getElementById("logo");
 var hamburgers = document.getElementById("hamburger");
-var btnLogin = document.getElementById("btn-login");
 
 // Menambahkan event listener untuk scroll
 window.addEventListener("scroll", function() {
@@ -82,10 +81,9 @@ window.addEventListener("scroll", function() {
     navbar.classList.add("scrolled");
     logos.classList.add("scrolled");
     hamburgers.classList.add("scrolled");
-    btnLogin.classList.add("scrolled");
   } else {
     navbar.classList.remove("scrolled");
     logos.classList.remove("scrolled");
-    btnLogin.classList.remove("scrolled");
+    hamburgers.classList.remove("scrolled");
   }
 });

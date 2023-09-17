@@ -35,7 +35,7 @@
   @apply bg-transparent border  text-proton-white;
 }
 .btn-dusty {
-  @apply bg-proton-dusty  text-proton-white;
+  @apply bg-proton-dusty text-proton-white shadow-lg shadow-purple-500/50 border;
 }
 .btn-purple {
   @apply bg-proton-purple  text-proton-white ;
@@ -69,18 +69,13 @@
   @apply max-h-0 overflow-hidden transition-all duration-300 ease-out;
 }
 
-#nav-menu.scrolled a {
-  @apply text-proton-blue font-semibold;
+#nav-menu.scrolled a, #logo.scrolled a{
+  @apply text-proton-blue;
 }
-#logo.scrolled a {
-  @apply text-proton-blue font-semibold;
-}
+
 #hamburger.scrolled  .hamburger-line {
   @apply bg-proton-blue;
 }
 
-#btn-login.scrolled {
-  @apply bg-proton-dusty text-proton-white shadow-lg shadow-purple-500/50
-}
 
 
